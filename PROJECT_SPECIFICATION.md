@@ -93,3 +93,21 @@ For each time interval (0–15, 15–30, ...), the engine simulates the followin
 Each step depends on the previous one.
 
 The final match result is the consequence of the simulated match flow rather than a direct score prediction.
+## Team Rating System
+
+The first version of the model includes the following team ratings:
+
+- Attack
+- Defense
+- Possession
+- Pressing
+- Counter Attack
+- Set Pieces
+- Finishing
+- Goalkeeping
+- Discipline
+- Home Advantage
+
+Current Form is not stored as a rating.
+
+Instead, it is calculated dynamically from recent matches.
