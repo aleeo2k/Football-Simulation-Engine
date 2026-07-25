@@ -75,3 +75,21 @@ Each interval has its own probabilities of:
 - Corners
 
 The final result is produced after all intervals have been simulated.
+## Match Flow
+
+The match simulation follows the natural sequence of football events.
+
+For each time interval (0–15, 15–30, ...), the engine simulates the following chain:
+
+1. Ball possession
+2. Number of attacks
+3. Dangerous attacks
+4. Shots
+5. Shots on target
+6. Expected Goals (xG)
+7. Goals
+8. Match events (corners, cards, substitutions)
+
+Each step depends on the previous one.
+
+The final match result is the consequence of the simulated match flow rather than a direct score prediction.
