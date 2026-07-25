@@ -49,3 +49,29 @@ The system should predict:
 - Most likely scores
 - Probability distribution
 - Match explanation
+## Match Simulation
+
+The Football Simulation Engine simulates matches in time intervals instead of predicting only the final score.
+
+Version 1.0 uses 6 intervals:
+
+- 0–15
+- 15–30
+- 30–45
+- 45–60
+- 60–75
+- 75–90
+
+Each interval has its own probabilities of:
+
+- Possession
+- Attacks
+- Dangerous attacks
+- Shots
+- Shots on target
+- Expected Goals (xG)
+- Goals
+- Cards
+- Corners
+
+The final result is produced after all intervals have been simulated.
