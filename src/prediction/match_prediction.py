@@ -13,10 +13,19 @@ class MatchPrediction:
         draw = 0.0
         away_win = 0.0
 
+        scores = []
+
         for home_goals in range(len(matrix)):
             for away_goals in range(len(matrix[0])):
 
                 p = matrix[home_goals][away_goals]
+
+                scores.append(
+                    {
+                        "score": f"{home_goals}:{away_goals}",
+                        "probability": p,
+                    }
+                )
 
                 if home_goals > away_goals:
                     home_win += p
@@ -27,9 +36,15 @@ class MatchPrediction:
                 else:
                     away_win += p
 
+        scores = sorted(
+            scores,
+            key=lambda x: x["probability"],
+            reverse=True,
+        )
+
         return {
             "home_win": round(home_win * 100, 2),
             "draw": round(draw * 100, 2),
             "away_win": round(away_win * 100, 2),
-            "matrix": matrix,
+            "top_scores": scores[:5],
         }
