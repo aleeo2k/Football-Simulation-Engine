@@ -1,28 +1,56 @@
-import pandas as pd
-
-
 class ExpectedGoalsModel:
-    def __init__(self, ratings: pd.DataFrame):
-        self.ratings = ratings
 
-    def predict(self, home_team: str, away_team: str):
+    def predict(
+        self,
+        home: dict,
+        away: dict,
+        league: dict,
+        home_team: str,
+        away_team: str,
+    ):
 
-        home = self.ratings.loc[home_team]
-        away = self.ratings.loc[away_team]
+        league_avg = (
+            league["home_xg"]
+            + league["away_xg"]
+        ) / 2
 
-        league_avg = self.ratings["attack"].mean()
+        if league_avg <= 0:
+            league_avg = 1.35
+
+        home_attack = max(
+            home["home_attack"],
+            0.01,
+        )
+
+        away_attack = max(
+            away["away_attack"],
+            0.01,
+        )
+
+        home_defence = max(
+            home["home_defence"],
+            0.01,
+        )
+
+        away_defence = max(
+            away["away_defence"],
+            0.01,
+        )
 
         home_xg = (
-            home["home_attack"]
-            * away["away_defence"]
+            home_attack
+            * away_defence
             / league_avg
         )
 
         away_xg = (
-            away["away_attack"]
-            * home["home_defence"]
+            away_attack
+            * home_defence
             / league_avg
         )
+
+        home_xg = max(home_xg, 0.01)
+        away_xg = max(away_xg, 0.01)
 
         return {
             "home_team": home_team,

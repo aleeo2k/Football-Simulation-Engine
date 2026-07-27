@@ -1,37 +1,86 @@
-# Football Simulation Engine ⚽
+# Football Simulation Engine
 
-## Vision
+A football match prediction engine built with Python.
 
-Football Simulation Engine (FSE) is an AI-driven football simulation platform designed to model football matches as realistically as possible.
+## Features
 
-Instead of predicting only the final score, the engine simulates the entire match using statistical models, dynamic team ratings, player impact, expected goals, contextual factors and Monte Carlo simulations.
+- Understat data collection
+- SQLite database
+- Team rating calculation
+- Expected Goals (xG) model
+- Poisson goal model
+- Match outcome probabilities
+- Most likely scorelines
 
----
+## Project Structure
 
-## Main Goals
+```
+Football-Simulation-Engine
+│
+├── data
+│
+├── src
+│   ├── collectors
+│   ├── config.py
+│   ├── database
+│   ├── prediction
+│   ├── ratings
+│   └── services
+│
+├── predict.py
+├── update_database.py
+└── README.md
+```
 
-- Dynamic team ratings
-- Dynamic player ratings
-- Expected Goals prediction
-- Monte Carlo match simulation
-- Automatic data updates
-- Machine Learning optimisation
-- Realistic match scenarios
+## Installation
 
----
+```bash
+git clone <repository>
+cd Football-Simulation-Engine
+
+python -m venv .venv
+
+.venv\Scripts\activate
+
+pip install -r requirements.txt
+```
+
+## Usage
+
+Update database:
+
+```bash
+python update_database.py
+```
+
+Predict a match:
+
+```bash
+python predict.py
+```
+
+Example:
+
+```
+Match:
+Arsenal vs Liverpool
+```
 
 ## Roadmap
 
-- [ ] Data Collection
-- [ ] Database
-- [ ] Dynamic Ratings
-- [ ] Expected Goals Model
-- [ ] Monte Carlo Engine
-- [ ] Machine Learning
-- [ ] Version 1.0
+- [x] Understat Collector
+- [x] SQLite Database
+- [x] Team Ratings
+- [x] Expected Goals
+- [x] Poisson Model
+- [x] Match Prediction
+- [x] Prediction Service
+- [ ] Evaluation Engine
+- [ ] Dixon-Coles Model
+- [ ] Monte Carlo Simulation
+- [ ] Season Simulation
+- [ ] Streamlit Interface
 
----
+## License
 
-## Project Status
-
-🚧 Early Development
+MIT

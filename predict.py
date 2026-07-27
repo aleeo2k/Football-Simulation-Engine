@@ -1,3 +1,4 @@
+from src.services.explain_service import ExplainService
 from src.services.prediction_service import PredictionService
 
 
@@ -72,26 +73,7 @@ def main():
         away_team,
     )
 
-    print("\n====================================")
-    print(f"{result['home_team']} vs {result['away_team']}")
-    print("====================================")
-
-    print("\nExpected Goals")
-    print(f"{result['home_team']}: {result['home_xg']:.2f}")
-    print(f"{result['away_team']}: {result['away_xg']:.2f}")
-
-    print("\nMatch Odds")
-    print(f"{result['home_team']}: {result['home_win']}%")
-    print(f"Draw: {result['draw']}%")
-    print(f"{result['away_team']}: {result['away_win']}%")
-
-    print("\nMost Likely Scores")
-
-    for score in result["top_scores"]:
-        print(
-            f"{score['score']:>5}   "
-            f"{score['probability'] * 100:.2f}%"
-        )
+    ExplainService.print_prediction(result)
 
 
 if __name__ == "__main__":

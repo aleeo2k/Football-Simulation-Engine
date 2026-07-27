@@ -2,8 +2,14 @@ import pandas as pd
 
 
 class RatingService:
-    def __init__(self, matches: pd.DataFrame):
+
+    def __init__(
+        self,
+        matches: pd.DataFrame,
+        recency_decay: float = 0.998,
+    ):
         self.matches = matches.copy()
+        self.recency_decay = recency_decay
 
     def team_statistics(self):
 
@@ -13,8 +19,13 @@ class RatingService:
 
         latest = matches["date"].max()
 
-        matches["days_old"] = (latest - matches["date"]).dt.days
-        matches["weight"] = 0.998 ** matches["days_old"]
+        matches["days_old"] = (
+            latest - matches["date"]
+        ).dt.days
+
+        matches["weight"] = (
+            self.recency_decay ** matches["days_old"]
+        )
 
         teams = []
 
@@ -26,9 +37,14 @@ class RatingService:
             away = matches[matches.away_team == team]
 
             def weighted(series, weight):
+
                 if len(series) == 0:
                     return 0
-                return (series * weight).sum() / weight.sum()
+
+                return (
+                    (series * weight).sum()
+                    / weight.sum()
+                )
 
             teams.append(
                 {
@@ -36,22 +52,22 @@ class RatingService:
 
                     "home_attack": weighted(
                         home.home_xg,
-                        home.weight
+                        home.weight,
                     ),
 
                     "home_defence": weighted(
                         home.away_xg,
-                        home.weight
+                        home.weight,
                     ),
 
                     "away_attack": weighted(
                         away.away_xg,
-                        away.weight
+                        away.weight,
                     ),
 
                     "away_defence": weighted(
                         away.home_xg,
-                        away.weight
+                        away.weight,
                     ),
 
                     "matches": len(home) + len(away),
@@ -70,18 +86,18 @@ class RatingService:
             ratings["away_defence"]
         ) / 2
 
-        league_attack = ratings.attack.mean()
-        league_defence = ratings.defence.mean()
+        league_attack = ratings["attack"].mean()
+        league_defence = ratings["defence"].mean()
 
         ratings["attack_strength"] = (
-            ratings.attack / league_attack
+            ratings["attack"] / league_attack
         )
 
         ratings["defence_strength"] = (
-            ratings.defence / league_defence
+            ratings["defence"] / league_defence
         )
 
         return ratings.sort_values(
             "attack_strength",
-            ascending=False
+            ascending=False,
         )
