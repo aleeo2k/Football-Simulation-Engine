@@ -1,5 +1,7 @@
 import math
 
+from src.config import MAX_GOALS
+
 
 class PoissonModel:
 
@@ -20,16 +22,15 @@ class PoissonModel:
         self,
         home_xg: float,
         away_xg: float,
-        max_goals: int = 7,
     ):
 
         matrix = []
 
-        for home_goals in range(max_goals + 1):
+        for home_goals in range(MAX_GOALS + 1):
 
             row = []
 
-            for away_goals in range(max_goals + 1):
+            for away_goals in range(MAX_GOALS + 1):
 
                 p = (
                     self.probability(home_xg, home_goals)

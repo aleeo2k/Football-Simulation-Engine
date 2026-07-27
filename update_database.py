@@ -1,8 +1,7 @@
 from src.collectors.understat_collector import UnderstatCollector
+from src.config import DEFAULT_LEAGUE
 from src.database.database import Database
 from src.database.repository import MatchRepository
-
-LEAGUE = "ENG-Premier League"
 
 
 def main():
@@ -17,9 +16,11 @@ def main():
 
     collector = UnderstatCollector()
 
-    print("Downloading latest matches...\n")
+    print(f"Downloading {DEFAULT_LEAGUE}...\n")
 
-    matches = collector.get_matches(LEAGUE)
+    matches = collector.get_matches(
+        DEFAULT_LEAGUE
+    )
 
     repository.save_matches(matches)
 
