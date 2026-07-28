@@ -1,13 +1,14 @@
 from collections import defaultdict
 
+from src.config import LEAGUE_AVERAGE, SMOOTHING
+from src.ratings.base.base_rating_tracker import BaseRatingTracker
 
-SMOOTHING = 5.0
-LEAGUE_AVERAGE = 1.35
 
+class RatingTracker(BaseRatingTracker):
 
-class RatingTracker:
+    def __init__(self, smoothing=SMOOTHING):
 
-    def __init__(self):
+        self.smoothing = smoothing
 
         self.stats = defaultdict(
             lambda: {
@@ -42,18 +43,12 @@ class RatingTracker:
         away["away_defence_sum"] += match["home_xg"]
         away["away_defence_weight"] += 1
 
-    def smoothed_average(
-        self,
-        total,
-        games,
-    ):
+    def smoothed_average(self, total, games):
 
         return (
-            total
-            + SMOOTHING * LEAGUE_AVERAGE
+            total + self.smoothing * LEAGUE_AVERAGE
         ) / (
-            games
-            + SMOOTHING
+            games + self.smoothing
         )
 
     def get_team(self, team):
@@ -109,7 +104,6 @@ class RatingTracker:
             values = []
 
             if team["home_attack_weight"] > 0:
-
                 values.append(
                     self.smoothed_average(
                         team["home_attack_sum"],
@@ -118,7 +112,6 @@ class RatingTracker:
                 )
 
             if team["away_attack_weight"] > 0:
-
                 values.append(
                     self.smoothed_average(
                         team["away_attack_sum"],
