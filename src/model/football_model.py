@@ -28,6 +28,8 @@ class FootballModel:
             k_factor=k_factor,
         )
 
+        self.features = FEATURES
+
         self.pipeline = Pipeline(
             [
                 (
@@ -39,6 +41,7 @@ class FootballModel:
                     LogisticRegression(
                         solver="lbfgs",
                         max_iter=5000,
+                        random_state=42,
                     ),
                 ),
             ]
@@ -58,7 +61,7 @@ class FootballModel:
 
         dataset = self.build_dataset(matches)
 
-        X = dataset[FEATURES]
+        X = dataset[self.features]
         y = dataset["result"]
 
         self.pipeline.fit(
@@ -75,7 +78,7 @@ class FootballModel:
 
         dataset = self.build_dataset(matches)
 
-        X = dataset[FEATURES].reset_index(drop=True)
+        X = dataset[self.features].reset_index(drop=True)
         y = dataset["result"].reset_index(drop=True)
 
         n = len(dataset)

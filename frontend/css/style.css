@@ -1,0 +1,1234 @@
+/* ============================================================
+   RESET
+============================================================ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    min-height: 100vh;
+
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background: #f5f6f8;
+    color: #17181b;
+}
+
+
+/* ============================================================
+   APP
+============================================================ */
+
+.app {
+    width: min(1100px, calc(100% - 32px));
+
+    margin: 0 auto;
+
+    padding:
+        36px
+        0
+        60px;
+}
+
+
+/* ============================================================
+   HEADER
+============================================================ */
+
+.header {
+    margin-bottom: 28px;
+}
+
+
+.logo {
+    font-size: 30px;
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+
+.subtitle {
+    margin-top: 6px;
+
+    font-size: 14px;
+
+    color: #777b83;
+}
+
+
+/* ============================================================
+   CARD
+============================================================ */
+
+.card {
+    background: #ffffff;
+
+    border: 1px solid #e7e8eb;
+
+    border-radius: 18px;
+
+    padding: 24px;
+
+    margin-bottom: 18px;
+
+    box-shadow:
+        0 4px 16px rgba(0, 0, 0, 0.035);
+}
+
+
+.card h2 {
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    font-weight: 750;
+
+    letter-spacing: -0.3px;
+}
+
+
+/* ============================================================
+   TEAM INPUTS
+============================================================ */
+
+.teams-input {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        auto
+        minmax(0, 1fr);
+
+    align-items: end;
+
+    gap: 18px;
+}
+
+
+.field {
+    position: relative;
+}
+
+
+.field label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+    font-weight: 650;
+
+    color: #686c74;
+}
+
+
+/* ============================================================
+   SEARCH
+============================================================ */
+
+.team-search {
+    position: relative;
+}
+
+
+.team-search-input,
+.date-field input {
+    width: 100%;
+
+    height: 50px;
+
+    border: 1px solid #dfe1e5;
+
+    border-radius: 12px;
+
+    background: #fafafa;
+
+    padding:
+        0
+        15px;
+
+    font-size: 15px;
+
+    color: #17181b;
+
+    outline: none;
+
+    transition:
+        border-color 0.15s ease,
+        box-shadow 0.15s ease,
+        background 0.15s ease;
+}
+
+
+.team-search-input:hover,
+.date-field input:hover {
+    border-color: #c9cbd0;
+}
+
+
+.team-search-input:focus,
+.date-field input:focus {
+    background: #ffffff;
+
+    border-color: #17181b;
+
+    box-shadow:
+        0 0 0 3px rgba(23, 24, 27, 0.07);
+}
+
+
+.team-search-input::placeholder {
+    color: #9a9da4;
+}
+
+
+/* ============================================================
+   SEARCH RESULTS
+============================================================ */
+
+.team-search-results {
+    position: absolute;
+
+    z-index: 100;
+
+    top: calc(100% + 6px);
+
+    left: 0;
+    right: 0;
+
+    max-height: 300px;
+
+    overflow-y: auto;
+
+    background: #ffffff;
+
+    border: 1px solid #dedfe3;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.10);
+
+    padding: 8px;
+}
+
+
+.team-search-results.hidden {
+    display: none;
+}
+
+
+/* ============================================================
+   TEAM RESULT
+============================================================ */
+
+.team-result {
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+
+    min-height: 78px;
+
+    gap: 18px;
+
+    padding:
+        10px
+        16px;
+
+    border: 0;
+
+    border-radius: 12px;
+
+    background: transparent;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        background 0.15s ease;
+}
+
+
+.team-result:hover {
+    background: #f4f5f7;
+}
+
+
+.team-result.selected {
+    background: #17181b;
+
+    color: #ffffff;
+}
+
+
+/* ============================================================
+   TEAM RESULT LOGO
+============================================================ */
+
+.team-result-logo {
+    width: 54px;
+    height: 54px;
+
+    flex: 0 0 54px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f1f2f4;
+
+    overflow: hidden;
+
+    font-size: 20px;
+
+    line-height: 1;
+}
+
+
+.team-result-logo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    padding: 5px;
+}
+
+
+/* ============================================================
+   TEAM RESULT CONTENT
+============================================================ */
+
+.team-result-content {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 5px;
+}
+
+
+/* ============================================================
+   TEAM RESULT NAME
+============================================================ */
+
+.team-result-name {
+    font-size: 18px;
+
+    font-weight: 700;
+
+    line-height: 1.1;
+
+    color: #17181b;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* ============================================================
+   TEAM RESULT LEAGUE
+============================================================ */
+
+.team-result-meta {
+    font-size: 13px;
+
+    font-weight: 500;
+
+    font-style: italic;
+
+    line-height: 1.1;
+
+    color: #777b83;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.team-result:hover .team-result-name {
+    color: #17181b;
+}
+
+
+/* ============================================================
+   NO RESULTS
+============================================================ */
+
+.team-no-results {
+    padding: 12px;
+
+    font-size: 14px;
+
+    color: #888c94;
+
+    text-align: center;
+}
+
+
+/* ============================================================
+   VS
+============================================================ */
+
+.vs-small {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 50px;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    color: #999da5;
+}
+
+
+/* ============================================================
+   DATE
+============================================================ */
+
+.date-field {
+    margin-top: 18px;
+
+    max-width: 300px;
+}
+
+
+.date-field input {
+    cursor: pointer;
+}
+
+
+/* ============================================================
+   PREDICT BUTTON
+============================================================ */
+
+.predict-button {
+    width: 100%;
+
+    height: 52px;
+
+    margin-top: 22px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #17181b;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 750;
+
+    letter-spacing: 0.2px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.12s ease,
+        opacity 0.12s ease;
+}
+
+
+.predict-button:hover {
+    opacity: 0.9;
+}
+
+
+.predict-button:active {
+    transform: scale(0.99);
+}
+
+
+.predict-button:disabled {
+    opacity: 0.55;
+
+    cursor: wait;
+}
+
+
+/* ============================================================
+   LOADING
+============================================================ */
+
+.loading {
+    padding: 20px;
+
+    margin-bottom: 18px;
+
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    border: 1px solid #e7e8eb;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    color: #777b83;
+}
+
+
+.hidden {
+    display: none !important;
+}
+
+
+/* ============================================================
+   MATCH CARD
+============================================================ */
+
+.match-card {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        auto
+        1fr;
+
+    align-items: center;
+
+    gap: 30px;
+
+    text-align: center;
+}
+
+
+.match-team {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    min-width: 0;
+}
+
+
+.team-logo {
+    width: 52px;
+    height: 52px;
+
+    flex: 0 0 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f0f1f3;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    color: #555961;
+}
+
+
+.team-name {
+    font-size: 18px;
+
+    font-weight: 750;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.match-center {
+    min-width: 70px;
+}
+
+
+.match-vs {
+    font-size: 12px;
+
+    font-weight: 800;
+
+    color: #9a9da4;
+}
+
+
+.match-date-display {
+    margin-top: 6px;
+
+    font-size: 12px;
+
+    color: #8a8e96;
+}
+
+
+/* ============================================================
+   PROBABILITY GRID
+============================================================ */
+
+.probability-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 14px;
+}
+
+
+.probability-card {
+    padding: 18px;
+
+    border-radius: 14px;
+
+    background: #f7f7f8;
+}
+
+
+.probability-label {
+    font-size: 11px;
+
+    font-weight: 750;
+
+    color: #7c8088;
+
+    letter-spacing: 0.4px;
+}
+
+
+.probability-value {
+    margin-top: 8px;
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+
+.probability-bar {
+    width: 100%;
+
+    height: 5px;
+
+    margin-top: 12px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #dedfe2;
+}
+
+
+.probability-fill {
+    height: 100%;
+
+    width: 0;
+
+    border-radius: inherit;
+
+    background: #17181b;
+
+    transition:
+        width 0.5s ease;
+}
+
+
+/* ============================================================
+   MODEL PREDICTION
+============================================================ */
+
+.model-prediction {
+    margin-top: 16px;
+
+    padding:
+        16px
+        18px;
+
+    border-radius: 14px;
+
+    background: #17181b;
+
+    color: #ffffff;
+}
+
+
+.prediction-label {
+    font-size: 10px;
+
+    font-weight: 750;
+
+    color: #a9abb0;
+
+    letter-spacing: 0.5px;
+}
+
+
+.prediction-content {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 6px;
+}
+
+
+.prediction-team {
+    font-size: 17px;
+
+    font-weight: 750;
+}
+
+
+.prediction-percent {
+    font-size: 22px;
+
+    font-weight: 800;
+}
+
+
+/* ============================================================
+   XG
+============================================================ */
+
+.xg-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 14px;
+}
+
+
+.stat-card {
+    padding: 20px;
+
+    border-radius: 14px;
+
+    background: #f7f7f8;
+
+    text-align: center;
+}
+
+
+.stat-label {
+    font-size: 11px;
+
+    font-weight: 750;
+
+    color: #858991;
+
+    letter-spacing: 0.4px;
+}
+
+
+.stat-team {
+    margin-top: 6px;
+
+    font-size: 14px;
+
+    font-weight: 650;
+}
+
+
+.stat-value {
+    margin-top: 10px;
+
+    font-size: 34px;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+
+/* ============================================================
+   TWO COLUMN
+============================================================ */
+
+.two-column {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+
+/* ============================================================
+   SCORES
+============================================================ */
+
+.scores-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.score-row {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding:
+        13px
+        15px;
+
+    border-radius: 10px;
+
+    background: #f7f7f8;
+}
+
+
+.score-value {
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.score-probability {
+    font-size: 15px;
+
+    font-weight: 800;
+}
+
+
+.no-data {
+    padding: 20px;
+
+    text-align: center;
+
+    color: #92959c;
+
+    font-size: 14px;
+}
+
+
+/* ============================================================
+   FOOTER
+============================================================ */
+
+.footer {
+    margin-top: 35px;
+
+    text-align: center;
+
+    font-size: 12px;
+
+    color: #999ca3;
+}
+
+
+/* ============================================================
+   SCROLLBAR
+============================================================ */
+
+.team-search-results::-webkit-scrollbar {
+    width: 6px;
+}
+
+
+.team-search-results::-webkit-scrollbar-thumb {
+    background: #d0d2d6;
+
+    border-radius: 10px;
+}
+
+
+/* ============================================================
+   TABLET
+============================================================ */
+
+@media (max-width: 750px) {
+
+    .app {
+        width: min(
+            100% - 22px,
+            650px
+        );
+
+        padding-top: 22px;
+    }
+
+
+    .logo {
+        font-size: 25px;
+    }
+
+
+    .teams-input {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+
+    .vs-small {
+        height: auto;
+
+        padding:
+            2px
+            0;
+
+        font-size: 11px;
+    }
+
+
+    .date-field {
+        max-width: none;
+    }
+
+
+    .match-card {
+        grid-template-columns:
+            1fr
+            auto
+            1fr;
+
+        gap: 10px;
+    }
+
+
+    .match-team {
+        flex-direction: column;
+
+        gap: 7px;
+    }
+
+
+    .team-name {
+        font-size: 15px;
+    }
+
+
+    .team-logo {
+        width: 45px;
+        height: 45px;
+
+        flex-basis: 45px;
+    }
+
+
+    .probability-grid {
+        gap: 8px;
+    }
+
+
+    .probability-card {
+        padding:
+            14px
+            10px;
+    }
+
+
+    .probability-value {
+        font-size: 23px;
+    }
+
+
+    .team-result {
+        min-height: 72px;
+
+        gap: 15px;
+    }
+
+
+    .team-result-logo {
+        width: 50px;
+        height: 50px;
+
+        flex-basis: 50px;
+    }
+
+
+    .team-result-name {
+        font-size: 17px;
+    }
+
+
+    .team-result-meta {
+        font-size: 12px;
+    }
+
+}
+
+
+/* ============================================================
+   PHONE
+============================================================ */
+
+@media (max-width: 500px) {
+
+    .app {
+        width: calc(100% - 16px);
+
+        padding-top: 16px;
+    }
+
+
+    .card {
+        padding: 17px;
+
+        border-radius: 15px;
+    }
+
+
+    .header {
+        margin-bottom: 18px;
+    }
+
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+
+    .probability-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .probability-card {
+        padding: 15px;
+    }
+
+
+    .probability-value {
+        font-size: 26px;
+    }
+
+
+    .xg-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+
+
+    .match-card {
+        gap: 5px;
+    }
+
+
+    .match-center {
+        min-width: 45px;
+    }
+
+
+    .match-vs {
+        font-size: 10px;
+    }
+
+
+    .team-name {
+        max-width: 105px;
+
+        font-size: 13px;
+    }
+
+
+    .team-logo {
+        width: 42px;
+        height: 42px;
+
+        flex-basis: 42px;
+
+        font-size: 15px;
+    }
+
+
+    .stat-value {
+        font-size: 30px;
+    }
+
+
+    .prediction-team {
+        font-size: 14px;
+    }
+
+
+    .prediction-percent {
+        font-size: 19px;
+    }
+
+
+    /* --------------------------------------------------------
+       SEARCH RESULTS — PHONE
+    -------------------------------------------------------- */
+
+    .team-search-results {
+        max-height: 240px;
+
+        padding: 7px;
+    }
+
+
+    .team-result {
+        min-height: 68px;
+
+        gap: 14px;
+
+        padding:
+            8px
+            10px;
+
+        border-radius: 10px;
+    }
+
+
+    .team-result-logo {
+        width: 46px;
+        height: 46px;
+
+        flex-basis: 46px;
+
+        font-size: 17px;
+    }
+
+
+    .team-result-logo img {
+        padding: 4px;
+    }
+
+
+    .team-result-content {
+        gap: 4px;
+    }
+
+
+    .team-result-name {
+        font-size: 16px;
+    }
+
+
+    .team-result-meta {
+        font-size: 11px;
+    }
+/* ============================================================
+   TEAM SEARCH — FINAL OVERRIDE
+============================================================ */
+
+.team-result {
+    display: flex !important;
+    align-items: center !important;
+    gap: 18px !important;
+    min-height: 78px !important;
+    padding: 10px 16px !important;
+}
+
+.team-result-logo {
+    width: 54px !important;
+    height: 54px !important;
+    flex: 0 0 54px !important;
+}
+
+.team-result-content {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    gap: 5px !important;
+}
+
+.team-result-name {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    line-height: 1.1 !important;
+    color: #17181b !important;
+}
+
+.team-result-meta {
+    display: block !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif !important;
+
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    font-style: italic !important;
+
+    line-height: 1.2 !important;
+
+    color: #777b83 !important;
+}
+
+.team-result-logo {
+    display: block !important;
+    width: 46px !important;
+    height: 46px !important;
+    min-width: 46px !important;
+    min-height: 46px !important;
+    max-width: 46px !important;
+    max-height: 46px !important;
+    object-fit: contain !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.team-result-logo {
+    position: static !important;
+}
+
+}

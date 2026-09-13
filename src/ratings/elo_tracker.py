@@ -7,6 +7,17 @@ from src.config import (
 )
 
 
+# ============================================================
+# INITIAL RATINGS FOR PROMOTED EPL TEAMS
+# ============================================================
+
+PROMOTED_TEAM_RATINGS = {
+    "Coventry": 1577.13,
+    "Hull": 1516.17,
+    "Ipswich": 1562.10,
+}
+
+
 class EloTracker:
 
     def __init__(
@@ -28,6 +39,16 @@ class EloTracker:
         self.opponents = defaultdict(
             lambda: deque(maxlen=schedule_window)
         )
+
+        # ----------------------------------------------------
+        # Initial ratings for promoted teams
+        # ----------------------------------------------------
+
+        for team, rating in PROMOTED_TEAM_RATINGS.items():
+
+            self.ratings[team] = float(
+                rating
+            )
 
     @staticmethod
     def expected_score(
@@ -113,9 +134,19 @@ class EloTracker:
         games = self.opponents[team]
 
         if len(games) == 0:
-            return self.initial_elo
+            return self.ratings[team]
 
         return sum(games) / len(games)
+
+    def set_rating(
+        self,
+        team,
+        rating,
+    ):
+
+        self.ratings[team] = float(
+            rating
+        )
 
     def has_team(
         self,

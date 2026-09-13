@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Football Predictor</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="header">
+
+        <div class="logo">
+            Football Predictor
+        </div>
+
+        <div class="subtitle">
+            Football match prediction engine
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MATCH SELECTION
+    ====================================================== -->
+
+    <section class="card">
+
+        <h2>
+            Select match
+        </h2>
+
+
+        <div class="teams-input">
+
+
+            <!-- =================================================
+                 HOME TEAM
+            ================================================== -->
+
+            <div class="field team-search-field">
+
+                <label>
+                    Home team
+                </label>
+
+
+                <div class="team-search">
+
+                    <input
+                        type="text"
+                        id="home-team-search"
+                        class="team-search-input"
+                        placeholder="Search team..."
+                        autocomplete="off"
+                    >
+
+
+                    <input
+                        type="hidden"
+                        id="home-team"
+                    >
+
+
+                    <div
+                        id="home-team-results"
+                        class="team-search-results hidden"
+                    ></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 VS
+            ================================================== -->
+
+            <div class="vs-small">
+                VS
+            </div>
+
+
+            <!-- =================================================
+                 AWAY TEAM
+            ================================================== -->
+
+            <div class="field team-search-field">
+
+                <label>
+                    Away team
+                </label>
+
+
+                <div class="team-search">
+
+                    <input
+                        type="text"
+                        id="away-team-search"
+                        class="team-search-input"
+                        placeholder="Search team..."
+                        autocomplete="off"
+                    >
+
+
+                    <input
+                        type="hidden"
+                        id="away-team"
+                    >
+
+
+                    <div
+                        id="away-team-results"
+                        class="team-search-results hidden"
+                    ></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             DATE
+        ====================================================== -->
+
+        <div class="field date-field">
+
+            <label>
+                Match date
+            </label>
+
+            <input
+                type="date"
+                id="match-date"
+            >
+
+        </div>
+
+
+        <!-- =====================================================
+             BUTTON
+        ====================================================== -->
+
+        <button
+            id="predict-button"
+            class="predict-button"
+        >
+            PREDICT MATCH
+        </button>
+
+    </section>
+
+
+    <!-- =====================================================
+         LOADING
+    ====================================================== -->
+
+    <div
+        id="loading"
+        class="loading hidden"
+    >
+        Calculating prediction...
+    </div>
+
+
+    <!-- =====================================================
+         RESULTS
+    ====================================================== -->
+
+    <main
+        id="results"
+        class="hidden"
+    >
+
+
+        <!-- =================================================
+             MATCH
+        ================================================== -->
+
+        <section
+            id="match-card"
+            class="card match-card"
+        >
+
+            <div class="match-team">
+
+                <div
+                    id="home-logo"
+                    class="team-logo"
+                >
+                    ?
+                </div>
+
+                <div
+                    id="home-name"
+                    class="team-name"
+                >
+                    Home
+                </div>
+
+            </div>
+
+
+            <div class="match-center">
+
+                <div class="match-vs">
+                    VS
+                </div>
+
+                <div
+                    id="match-date-display"
+                    class="match-date-display"
+                ></div>
+
+            </div>
+
+
+            <div class="match-team">
+
+                <div
+                    id="away-logo"
+                    class="team-logo"
+                >
+                    ?
+                </div>
+
+                <div
+                    id="away-name"
+                    class="team-name"
+                >
+                    Away
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             1X2
+        ================================================== -->
+
+        <section class="card">
+
+            <h2>
+                Match result
+            </h2>
+
+
+            <div class="probability-grid">
+
+
+                <!-- HOME -->
+
+                <div class="probability-card">
+
+                    <div class="probability-label">
+                        HOME WIN
+                    </div>
+
+                    <div
+                        id="home-win"
+                        class="probability-value"
+                    >
+                        —
+                    </div>
+
+                    <div class="probability-bar">
+
+                        <div
+                            id="home-win-bar"
+                            class="probability-fill"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DRAW -->
+
+                <div class="probability-card">
+
+                    <div class="probability-label">
+                        DRAW
+                    </div>
+
+                    <div
+                        id="draw"
+                        class="probability-value"
+                    >
+                        —
+                    </div>
+
+                    <div class="probability-bar">
+
+                        <div
+                            id="draw-bar"
+                            class="probability-fill"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- AWAY -->
+
+                <div class="probability-card">
+
+                    <div class="probability-label">
+                        AWAY WIN
+                    </div>
+
+                    <div
+                        id="away-win"
+                        class="probability-value"
+                    >
+                        —
+                    </div>
+
+                    <div class="probability-bar">
+
+                        <div
+                            id="away-win-bar"
+                            class="probability-fill"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MODEL PREDICTION -->
+
+            <div class="model-prediction">
+
+                <div class="prediction-label">
+                    MODEL FAVOURITE
+                </div>
+
+                <div class="prediction-content">
+
+                    <div
+                        id="prediction-team"
+                        class="prediction-team"
+                    >
+                        —
+                    </div>
+
+                    <div
+                        id="prediction-percent"
+                        class="prediction-percent"
+                    >
+                        —
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             EXPECTED GOALS
+        ================================================== -->
+
+        <section class="card">
+
+            <h2>
+                Expected goals
+            </h2>
+
+
+            <div class="xg-grid">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-label">
+                        HOME
+                    </div>
+
+                    <div
+                        id="home-xg-team"
+                        class="stat-team"
+                    >
+                        —
+                    </div>
+
+                    <div
+                        id="home-xg"
+                        class="stat-value"
+                    >
+                        —
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-label">
+                        AWAY
+                    </div>
+
+                    <div
+                        id="away-xg-team"
+                        class="stat-team"
+                    >
+                        —
+                    </div>
+
+                    <div
+                        id="away-xg"
+                        class="stat-value"
+                    >
+                        —
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             GOALS + BTTS
+        ================================================== -->
+
+        <div class="two-column">
+
+
+            <!-- GOALS -->
+
+            <section class="card">
+
+                <h2>
+                    Goals
+                </h2>
+
+
+                <div class="scores-list">
+
+                    <div class="score-row">
+
+                        <div class="score-value">
+                            Over 2.5
+                        </div>
+
+                        <div
+                            id="over-25"
+                            class="score-probability"
+                        >
+                            —
+                        </div>
+
+                    </div>
+
+
+                    <div class="score-row">
+
+                        <div class="score-value">
+                            Under 2.5
+                        </div>
+
+                        <div
+                            id="under-25"
+                            class="score-probability"
+                        >
+                            —
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- BTTS -->
+
+            <section class="card">
+
+                <h2>
+                    Both teams to score
+                </h2>
+
+
+                <div class="scores-list">
+
+                    <div class="score-row">
+
+                        <div class="score-value">
+                            Yes
+                        </div>
+
+                        <div
+                            id="btts-yes"
+                            class="score-probability"
+                        >
+                            —
+                        </div>
+
+                    </div>
+
+
+                    <div class="score-row">
+
+                        <div class="score-value">
+                            No
+                        </div>
+
+                        <div
+                            id="btts-no"
+                            class="score-probability"
+                        >
+                            —
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- =================================================
+             MOST LIKELY SCORES
+        ================================================== -->
+
+        <section class="card">
+
+            <h2>
+                Most likely scores
+            </h2>
+
+
+            <div
+                id="scores"
+                class="scores-list"
+            >
+
+                <div class="no-data">
+                    No prediction yet
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        Football Prediction Engine
+
+    </footer>
+
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================== -->
+
+<script src="/static/js/api.js"></script>
+
+<script src="/static/js/ui.js"></script>
+
+<script src="/static/js/app.js"></script>
+
+
+</body>
+
+</html>

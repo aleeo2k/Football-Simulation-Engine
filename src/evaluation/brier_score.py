@@ -22,3 +22,4 @@ class BrierScore:
             )
 
         return score / len(results)
+    

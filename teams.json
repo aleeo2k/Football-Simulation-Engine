@@ -1,0 +1,1473 @@
+{
+  "Arsenal": {
+    "aliases": [
+      "arsenal",
+      "ars",
+      "arsenal fc",
+      "арсенал"
+    ],
+    "league": "Premier League",
+    "country": "England",
+    "logo": "https://img.sofascore.com/api/v1/team/42/image",
+    "sofascore_id": 42
+  },
+  "Aston Villa": {
+    "aliases": [
+      "aston villa",
+      "villa",
+      "avfc",
+      "aston",
+      "астон вилла",
+      "вилла"
+    ],
+    "league": "Premier League",
+    "country": "England",
+    "logo": "https://img.sofascore.com/api/v1/team/40/image",
+    "sofascore_id": 40
+  },
+  "AFC Bournemouth": {
+    "aliases": [
+      "bournemouth",
+      "afc bournemouth",
+      "bournemouth fc",
+      "cherries",
+      "борнмут"
+    ],
+    "league": "Premier League",
+    "country": "England",
+    "logo": "https://img.sofascore.com/api/v1/team/60/image",
+    "sofascore_id": 60
+  },
+  "Brentford": {
+    "aliases": [
+      "brentford",
+      "brentford fc",
+      "bees",
+      "брентфорд"
+    ],
+    "league": "Premier League",
+    "country": "England",
+    "logo": "https://img.sofascore.com/api/v1/team/50/image",
+    "sofascore_id": 50
+  },
+  "Brighton & Hove Albion": {
+    "aliases": [
+      "brighton",
+      "brighton and hove albion",
+      "brighton hove",
+      "brighton fc",
+      "seagulls",
+      "брайтон"
+    ],
+    "league": "Premier League",
+    "country": "England",
+    "logo": "https://img.sofascore.com/api/v1/team/30/image",
+    "sofascore_id": 30
+  },
+  "Chelsea": {
+    "aliases": [
+      "chelsea",
+      "chelsea fc",
+      "cfc",
+      "blues",
+      "челси"
+    ],
+    "league": "Premier League",
+    "country": "England",
+    "logo": "https://img.sofascore.com/api/v1/team/38/image",
+    "sofascore_id": 38
+  },
+  "Coventry City": {
+    "aliases": [
+      "coventry",
+      "coventry city",
+      "coventry fc",
+      "ccfc",
+      "sky blues",
+      "ковентри",
+      "ковентри сити"
+    ],
+    "league": "Premier League",
+    "country": "England",
+    "logo": "https://img.sofascore.com/api/v1/team/11/image",
+    "sofascore_id": 11
+  },
+  "Crystal Palace": {
+    "aliases": [
+      "crystal palace",
+      "palace",
+      "cpfc",
+      "eagles",
+      "кристал пэлас",
+      "кристал палас"
+    ],
+    "league": "Premier League",
+    "country": "England",
+    "logo": "https://img.sofascore.com/api/v1/team/7/image",
+    "sofascore_id": 7
+  },
+  "Everton": {
+    "aliases": [
+      "everton",
+      "everton fc",
+      "efc",
+      "toffees",
+      "эвертон"
+    ],
+    "league": "Premier League",
+    "country": "England",
+    "logo": "https://img.sofascore.com/api/v1/team/48/image",
+    "sofascore_id": 48
+  },
+  "Fulham": {
+    "aliases": [
+      "fulham",
+      "fulham fc",
+      "ffc",
+      "cottagers",
+      "фулхэм",
+      "фулхем"
+    ],
+    "league": "Premier League",
+    "country": "England",
+    "logo": "https://img.sofascore.com/api/v1/team/43/image",
+    "sofascore_id": 43
+  },
+  "Hull City": {
+    "aliases": [
+      "hull",
+      "hull city",
+      "hull fc",
+      "tigers",
+      "халл",
+      "халл сити"
+    ],
+    "league": "Premier League",
+    "country": "England",
+    "logo": "https://img.sofascore.com/api/v1/team/96/image",
+    "sofascore_id": 96
+  },
+  "Ipswich Town": {
+    "aliases": [
+      "ipswich",
+      "ipswich town",
+      "ipswich fc",
+      "itfc",
+      "tractors",
+      "ипсвич",
+      "ипсвич таун"
+    ],
+    "league": "Premier League",
+    "country": "England",
+    "logo": "https://img.sofascore.com/api/v1/team/32/image",
+    "sofascore_id": 32
+  },
+  "Leeds United": {
+    "aliases": [
+      "leeds",
+      "leeds united",
+      "leeds fc",
+      "lufc",
+      "whites",
+      "лидс",
+      "лидс юнайтед"
+    ],
+    "league": "Premier League",
+    "country": "England",
+    "logo": "https://img.sofascore.com/api/v1/team/34/image",
+    "sofascore_id": 34
+  },
+  "Liverpool": {
+    "aliases": [
+      "liverpool",
+      "liverpool fc",
+      "lfc",
+      "reds",
+      "ливерпуль"
+    ],
+    "league": "Premier League",
+    "country": "England",
+    "logo": "https://img.sofascore.com/api/v1/team/44/image",
+    "sofascore_id": 44
+  },
+  "Manchester City": {
+    "aliases": [
+      "manchester city",
+      "man city",
+      "mancity",
+      "mcfc",
+      "city",
+      "citizens",
+      "манчестер сити",
+      "ман сити"
+    ],
+    "league": "Premier League",
+    "country": "England",
+    "logo": "https://img.sofascore.com/api/v1/team/17/image",
+    "sofascore_id": 17
+  },
+  "Manchester United": {
+    "aliases": [
+      "manchester united",
+      "man united",
+      "man utd",
+      "man u",
+      "mufc",
+      "united",
+      "red devils",
+      "манчестер юнайтед",
+      "ман юнайтед"
+    ],
+    "league": "Premier League",
+    "country": "England",
+    "logo": "https://img.sofascore.com/api/v1/team/35/image",
+    "sofascore_id": 35
+  },
+  "Newcastle United": {
+    "aliases": [
+      "newcastle",
+      "newcastle united",
+      "newcastle fc",
+      "nufc",
+      "magpies",
+      "ньюкасл",
+      "ньюкасл юнайтед"
+    ],
+    "league": "Premier League",
+    "country": "England",
+    "logo": "https://img.sofascore.com/api/v1/team/39/image",
+    "sofascore_id": 39
+  },
+  "Nottingham Forest": {
+    "aliases": [
+      "nottingham forest",
+      "nottingham",
+      "forest",
+      "nffc",
+      "фореcт",
+      "ноттингем форест"
+    ],
+    "league": "Premier League",
+    "country": "England",
+    "logo": "https://img.sofascore.com/api/v1/team/14/image",
+    "sofascore_id": 14
+  },
+  "Sunderland": {
+    "aliases": [
+      "sunderland",
+      "sunderland afc",
+      "safc",
+      "black cats",
+      "сандерленд"
+    ],
+    "league": "Premier League",
+    "country": "England",
+    "logo": "https://img.sofascore.com/api/v1/team/41/image",
+    "sofascore_id": 41
+  },
+  "Tottenham Hotspur": {
+    "aliases": [
+      "tottenham",
+      "tottenham hotspur",
+      "spurs",
+      "thfc",
+      "tottenham fc",
+      "шпоры",
+      "тоттенхэм",
+      "тоттенхем"
+    ],
+    "league": "Premier League",
+    "country": "England",
+    "logo": "https://img.sofascore.com/api/v1/team/33/image",
+    "sofascore_id": 33
+  },
+  "Athletic Club": {
+    "aliases": [
+      "athletic",
+      "athletic club",
+      "athletic bilbao",
+      "bilbao",
+      "athletic club bilbao",
+      "атлетик",
+      "атлетик бильбао"
+    ],
+    "league": "La Liga",
+    "country": "Spain",
+    "logo": "https://img.sofascore.com/api/v1/team/2825/image",
+    "sofascore_id": 2825
+  },
+  "Atletico Madrid": {
+    "aliases": [
+      "atletico",
+      "atletico madrid",
+      "atlético",
+      "atlético madrid",
+      "atleti",
+      "atm",
+      "атлетико",
+      "атлетико мадрид"
+    ],
+    "league": "La Liga",
+    "country": "Spain",
+    "logo": "https://img.sofascore.com/api/v1/team/2836/image",
+    "sofascore_id": 2836
+  },
+  "Osasuna": {
+    "aliases": [
+      "osasuna",
+      "ca osasuna",
+      "osasuna pamplona",
+      "осасуна"
+    ],
+    "league": "La Liga",
+    "country": "Spain",
+    "logo": "https://img.sofascore.com/api/v1/team/2820/image",
+    "sofascore_id": 2820
+  },
+  "Celta": {
+    "aliases": [
+      "celta",
+      "celta vigo",
+      "rc celta",
+      "celta de vigo",
+      "сельта",
+      "сельта виго"
+    ],
+    "league": "La Liga",
+    "country": "Spain",
+    "logo": "https://img.sofascore.com/api/v1/team/2821/image",
+    "sofascore_id": 2821
+  },
+  "Alaves": {
+    "aliases": [
+      "alaves",
+      "alavés",
+      "deportivo alaves",
+      "deportivo alavés",
+      "депортиво алавес",
+      "алавес"
+    ],
+    "league": "La Liga",
+    "country": "Spain",
+    "logo": "https://img.sofascore.com/api/v1/team/2885/image",
+    "sofascore_id": 2885
+  },
+  "Elche": {
+    "aliases": [
+      "elche",
+      "elche cf",
+      "ильче",
+      "эльче"
+    ],
+    "league": "La Liga",
+    "country": "Spain",
+    "logo": "https://img.sofascore.com/api/v1/team/2846/image",
+    "sofascore_id": 2846
+  },
+  "Barcelona": {
+    "aliases": [
+      "barcelona",
+      "barca",
+      "barça",
+      "fc barcelona",
+      "fcb",
+      "барселона",
+      "барса"
+    ],
+    "league": "La Liga",
+    "country": "Spain",
+    "logo": "https://img.sofascore.com/api/v1/team/2817/image",
+    "sofascore_id": 2817
+  },
+  "Getafe": {
+    "aliases": [
+      "getafe",
+      "getafe cf",
+      "хетафе"
+    ],
+    "league": "La Liga",
+    "country": "Spain",
+    "logo": "https://img.sofascore.com/api/v1/team/2859/image",
+    "sofascore_id": 2859
+  },
+  "Levante": {
+    "aliases": [
+      "levante",
+      "levante ud",
+      "levante union deportiva",
+      "леванте"
+    ],
+    "league": "La Liga",
+    "country": "Spain",
+    "logo": "https://img.sofascore.com/api/v1/team/2849/image",
+    "sofascore_id": 2849
+  },
+  "Malaga": {
+    "aliases": [
+      "malaga",
+      "málaga",
+      "malaga cf",
+      "малага"
+    ],
+    "league": "La Liga",
+    "country": "Spain",
+    "logo": "https://img.sofascore.com/api/v1/team/2830/image",
+    "sofascore_id": 2830
+  },
+  "Racing Santander": {
+    "aliases": [
+      "racing",
+      "racing santander",
+      "racing de santander",
+      "racing club",
+      "расинг",
+      "расинг сантандер"
+    ],
+    "league": "La Liga",
+    "country": "Spain",
+    "logo": "https://img.sofascore.com/api/v1/team/2835/image",
+    "sofascore_id": 2835
+  },
+  "Rayo Vallecano": {
+    "aliases": [
+      "rayo",
+      "rayo vallecano",
+      "rayovallecano",
+      "райо",
+      "райо вальекано"
+    ],
+    "league": "La Liga",
+    "country": "Spain",
+    "logo": "https://img.sofascore.com/api/v1/team/2818/image",
+    "sofascore_id": 2818
+  },
+  "Deportivo La Coruna": {
+    "aliases": [
+      "deportivo",
+      "deportivo la coruna",
+      "deportivo la coruña",
+      "depor",
+      "депортиво",
+      "депортиво ла корунья"
+    ],
+    "league": "La Liga",
+    "country": "Spain",
+    "logo": "https://img.sofascore.com/api/v1/team/2832/image",
+    "sofascore_id": 2832
+  },
+  "Espanyol": {
+    "aliases": [
+      "espanyol",
+      "rcd espanyol",
+      "espanyol barcelona",
+      "эспаньол"
+    ],
+    "league": "La Liga",
+    "country": "Spain",
+    "logo": "https://img.sofascore.com/api/v1/team/2814/image",
+    "sofascore_id": 2814
+  },
+  "Real Betis": {
+    "aliases": [
+      "betis",
+      "real betis",
+      "real betis balompie",
+      "бетис",
+      "реал бетис"
+    ],
+    "league": "La Liga",
+    "country": "Spain",
+    "logo": "https://img.sofascore.com/api/v1/team/2816/image",
+    "sofascore_id": 2816
+  },
+  "Real Madrid": {
+    "aliases": [
+      "real",
+      "real madrid",
+      "real madrid cf",
+      "madrid",
+      "realmadrid",
+      "rm",
+      "реал",
+      "реал мадрид"
+    ],
+    "league": "La Liga",
+    "country": "Spain",
+    "logo": "https://img.sofascore.com/api/v1/team/2829/image",
+    "sofascore_id": 2829
+  },
+  "Real Sociedad": {
+    "aliases": [
+      "real sociedad",
+      "sociedad",
+      "real sociedad san sebastian",
+      "realsociedad",
+      "реал сосьедад",
+      "сосьедад"
+    ],
+    "league": "La Liga",
+    "country": "Spain",
+    "logo": "https://img.sofascore.com/api/v1/team/2824/image",
+    "sofascore_id": 2824
+  },
+  "Sevilla": {
+    "aliases": [
+      "sevilla",
+      "sevilla fc",
+      "sevilla futbol club",
+      "севилья"
+    ],
+    "league": "La Liga",
+    "country": "Spain",
+    "logo": "https://img.sofascore.com/api/v1/team/2833/image",
+    "sofascore_id": 2833
+  },
+  "Valencia": {
+    "aliases": [
+      "valencia",
+      "valencia cf",
+      "валенсия"
+    ],
+    "league": "La Liga",
+    "country": "Spain",
+    "logo": "https://img.sofascore.com/api/v1/team/2828/image",
+    "sofascore_id": 2828
+  },
+  "Villarreal": {
+    "aliases": [
+      "villarreal",
+      "villarreal cf",
+      "villareal",
+      "вильярреал",
+      "вильярреал"
+    ],
+    "league": "La Liga",
+    "country": "Spain",
+    "logo": "https://img.sofascore.com/api/v1/team/2819/image",
+    "sofascore_id": 2819
+  },
+  "Atalanta": {
+    "aliases": [
+      "atalanta",
+      "atalanta bc",
+      "bergamo",
+      "la dea",
+      "аталанта",
+      "бергамо"
+    ],
+    "league": "Serie A",
+    "country": "Italy",
+    "logo": "https://img.sofascore.com/api/v1/team/2686/image",
+    "sofascore_id": 2686
+  },
+  "Bologna": {
+    "aliases": [
+      "bologna",
+      "bologna fc",
+      "bologna calcio",
+      "болонья"
+    ],
+    "league": "Serie A",
+    "country": "Italy",
+    "logo": "https://img.sofascore.com/api/v1/team/2685/image",
+    "sofascore_id": 2685
+  },
+  "Cagliari": {
+    "aliases": [
+      "cagliari",
+      "cagliari calcio",
+      "кальяри"
+    ],
+    "league": "Serie A",
+    "country": "Italy",
+    "logo": "https://img.sofascore.com/api/v1/team/2719/image",
+    "sofascore_id": 2719
+  },
+  "Como": {
+    "aliases": [
+      "como",
+      "como 1907",
+      "como calcio",
+      "комо"
+    ],
+    "league": "Serie A",
+    "country": "Italy",
+    "logo": "https://img.sofascore.com/api/v1/team/2704/image",
+    "sofascore_id": 2704
+  },
+  "Fiorentina": {
+    "aliases": [
+      "fiorentina",
+      "acf fiorentina",
+      "viola",
+      "фиорентина"
+    ],
+    "league": "Serie A",
+    "country": "Italy",
+    "logo": "https://img.sofascore.com/api/v1/team/2693/image",
+    "sofascore_id": 2693
+  },
+  "Frosinone": {
+    "aliases": [
+      "frosinone",
+      "frosinone calcio",
+      "фрозиноне"
+    ],
+    "league": "Serie A",
+    "country": "Italy",
+    "logo": "https://img.sofascore.com/api/v1/team/2801/image",
+    "sofascore_id": 2801
+  },
+  "Genoa": {
+    "aliases": [
+      "genoa",
+      "genoa cfc",
+      "genova",
+      "дженоа",
+      "генуя"
+    ],
+    "league": "Serie A",
+    "country": "Italy",
+    "logo": "https://img.sofascore.com/api/v1/team/2713/image",
+    "sofascore_id": 2713
+  },
+  "Inter": {
+    "aliases": [
+      "inter",
+      "inter milan",
+      "internazionale",
+      "inter internazionale",
+      "fc internazionale",
+      "интер",
+      "интер милан"
+    ],
+    "league": "Serie A",
+    "country": "Italy",
+    "logo": "https://img.sofascore.com/api/v1/team/2697/image",
+    "sofascore_id": 2697
+  },
+  "Juventus": {
+    "aliases": [
+      "juventus",
+      "juve",
+      "juventus fc",
+      "juve fc",
+      "ювентус",
+      "юве"
+    ],
+    "league": "Serie A",
+    "country": "Italy",
+    "logo": "https://img.sofascore.com/api/v1/team/2687/image",
+    "sofascore_id": 2687
+  },
+  "Lazio": {
+    "aliases": [
+      "lazio",
+      "ss lazio",
+      "lazio roma",
+      "лацио"
+    ],
+    "league": "Serie A",
+    "country": "Italy",
+    "logo": "https://img.sofascore.com/api/v1/team/2699/image",
+    "sofascore_id": 2699
+  },
+  "Lecce": {
+    "aliases": [
+      "lecce",
+      "us lecce",
+      "лечче"
+    ],
+    "league": "Serie A",
+    "country": "Italy",
+    "logo": "https://img.sofascore.com/api/v1/team/2689/image",
+    "sofascore_id": 2689
+  },
+  "Milan": {
+    "aliases": [
+      "milan",
+      "ac milan",
+      "acm",
+      "milan ac",
+      "милан",
+      "ас милан"
+    ],
+    "league": "Serie A",
+    "country": "Italy",
+    "logo": "https://img.sofascore.com/api/v1/team/2692/image",
+    "sofascore_id": 2692
+  },
+  "Monza": {
+    "aliases": [
+      "monza",
+      "ac monza",
+      "monza 1912",
+      "монца"
+    ],
+    "league": "Serie A",
+    "country": "Italy",
+    "logo": "https://img.sofascore.com/api/v1/team/2729/image",
+    "sofascore_id": 2729
+  },
+  "Napoli": {
+    "aliases": [
+      "napoli",
+      "ssc napoli",
+      "naples",
+      "неаполь",
+      "наполи"
+    ],
+    "league": "Serie A",
+    "country": "Italy",
+    "logo": "https://img.sofascore.com/api/v1/team/2714/image",
+    "sofascore_id": 2714
+  },
+  "Parma": {
+    "aliases": [
+      "parma",
+      "parma calcio",
+      "parma fc",
+      "парма"
+    ],
+    "league": "Serie A",
+    "country": "Italy",
+    "logo": "https://img.sofascore.com/api/v1/team/2690/image",
+    "sofascore_id": 2690
+  },
+  "Roma": {
+    "aliases": [
+      "roma",
+      "as roma",
+      "asr",
+      "roma fc",
+      "рома"
+    ],
+    "league": "Serie A",
+    "country": "Italy",
+    "logo": "https://img.sofascore.com/api/v1/team/2702/image",
+    "sofascore_id": 2702
+  },
+  "Sassuolo": {
+    "aliases": [
+      "sassuolo",
+      "us sassuolo",
+      "sassuolo calcio",
+      "сассуоло"
+    ],
+    "league": "Serie A",
+    "country": "Italy",
+    "logo": "https://img.sofascore.com/api/v1/team/2793/image",
+    "sofascore_id": 2793
+  },
+  "Torino": {
+    "aliases": [
+      "torino",
+      "torino fc",
+      "torino calcio",
+      "граната",
+      "торино"
+    ],
+    "league": "Serie A",
+    "country": "Italy",
+    "logo": "https://img.sofascore.com/api/v1/team/2696/image",
+    "sofascore_id": 2696
+  },
+  "Udinese": {
+    "aliases": [
+      "udinese",
+      "udinese calcio",
+      "удинезе"
+    ],
+    "league": "Serie A",
+    "country": "Italy",
+    "logo": "https://img.sofascore.com/api/v1/team/2695/image",
+    "sofascore_id": 2695
+  },
+  "Venezia": {
+    "aliases": [
+      "venezia",
+      "venezia fc",
+      "venice",
+      "венеция"
+    ],
+    "league": "Serie A",
+    "country": "Italy",
+    "logo": "https://img.sofascore.com/api/v1/team/2688/image",
+    "sofascore_id": 2688
+  },
+  "Bayern Munich": {
+    "aliases": [
+      "bayern",
+      "bayern munich",
+      "bayern munchen",
+      "bayern münchen",
+      "fc bayern",
+      "fcb",
+      "бавария",
+      "бавария мюнхен"
+    ],
+    "league": "Bundesliga",
+    "country": "Germany",
+    "logo": "https://img.sofascore.com/api/v1/team/2672/image",
+    "sofascore_id": 2672
+  },
+  "Bayer Leverkusen": {
+    "aliases": [
+      "bayer",
+      "bayer leverkusen",
+      "leverkusen",
+      "bayer 04",
+      "bay 04",
+      "байер",
+      "байер леверкузен"
+    ],
+    "league": "Bundesliga",
+    "country": "Germany",
+    "logo": "https://img.sofascore.com/api/v1/team/2681/image",
+    "sofascore_id": 2681
+  },
+  "Borussia Dortmund": {
+    "aliases": [
+      "borussia dortmund",
+      "dortmund",
+      "bvb",
+      "borussia",
+      "боруссия",
+      "боруссия дортмунд",
+      "дортмунд"
+    ],
+    "league": "Bundesliga",
+    "country": "Germany",
+    "logo": "https://img.sofascore.com/api/v1/team/2673/image",
+    "sofascore_id": 2673
+  },
+  "RB Leipzig": {
+    "aliases": [
+      "rb leipzig",
+      "leipzig",
+      "rbl",
+      "rb",
+      "лейпциг"
+    ],
+    "league": "Bundesliga",
+    "country": "Germany",
+    "logo": "https://img.sofascore.com/api/v1/team/36360/image",
+    "sofascore_id": 36360
+  },
+  "Eintracht Frankfurt": {
+    "aliases": [
+      "eintracht",
+      "eintracht frankfurt",
+      "frankfurt",
+      "sge",
+      "айнтрахт",
+      "айнтрахт франкфурт"
+    ],
+    "league": "Bundesliga",
+    "country": "Germany",
+    "logo": "https://img.sofascore.com/api/v1/team/2674/image",
+    "sofascore_id": 2674
+  },
+  "SC Freiburg": {
+    "aliases": [
+      "freiburg",
+      "sc freiburg",
+      "freiburg sc",
+      "фрайбург"
+    ],
+    "league": "Bundesliga",
+    "country": "Germany",
+    "logo": "https://img.sofascore.com/api/v1/team/2538/image",
+    "sofascore_id": 2538
+  },
+  "VfB Stuttgart": {
+    "aliases": [
+      "stuttgart",
+      "vfb stuttgart",
+      "vfb",
+      "штутгарт"
+    ],
+    "league": "Bundesliga",
+    "country": "Germany",
+    "logo": "https://img.sofascore.com/api/v1/team/2677/image",
+    "sofascore_id": 2677
+  },
+  "Borussia Monchengladbach": {
+    "aliases": [
+      "borussia monchengladbach",
+      "borussia mönchengladbach",
+      "monchengladbach",
+      "mönchengladbach",
+      "gladbach",
+      "боруссия мёнхенгладбах",
+      "гладбах"
+    ],
+    "league": "Bundesliga",
+    "country": "Germany",
+    "logo": "https://img.sofascore.com/api/v1/team/2673/image",
+    "sofascore_id": 2673
+  },
+  "VfL Wolfsburg": {
+    "aliases": [
+      "wolfsburg",
+      "vfl wolfsburg",
+      "vfl",
+      "волфсбург",
+      "вольфсбург"
+    ],
+    "league": "Bundesliga",
+    "country": "Germany",
+    "logo": "https://img.sofascore.com/api/v1/team/2520/image",
+    "sofascore_id": 2520
+  },
+  "Mainz 05": {
+    "aliases": [
+      "mainz",
+      "mainz 05",
+      "fsv mainz",
+      "майнц",
+      "майнц 05"
+    ],
+    "league": "Bundesliga",
+    "country": "Germany",
+    "logo": "https://img.sofascore.com/api/v1/team/2556/image",
+    "sofascore_id": 2556
+  },
+  "FC Augsburg": {
+    "aliases": [
+      "augsburg",
+      "fc augsburg",
+      "fca",
+      "аугсбург"
+    ],
+    "league": "Bundesliga",
+    "country": "Germany",
+    "logo": "https://img.sofascore.com/api/v1/team/2600/image",
+    "sofascore_id": 2600
+  },
+  "Werder Bremen": {
+    "aliases": [
+      "werder",
+      "werder bremen",
+      "bremen",
+      "sv werder",
+      "вердер",
+      "вердер бремен"
+    ],
+    "league": "Bundesliga",
+    "country": "Germany",
+    "logo": "https://img.sofascore.com/api/v1/team/2534/image",
+    "sofascore_id": 2534
+  },
+  "Union Berlin": {
+    "aliases": [
+      "union",
+      "union berlin",
+      "fc union berlin",
+      "унион",
+      "унион берлин"
+    ],
+    "league": "Bundesliga",
+    "country": "Germany",
+    "logo": "https://img.sofascore.com/api/v1/team/2547/image",
+    "sofascore_id": 2547
+  },
+  "FC Koln": {
+    "aliases": [
+      "koln",
+      "köln",
+      "cologne",
+      "fc koln",
+      "fc köln",
+      "кёльн",
+      "кельн"
+    ],
+    "league": "Bundesliga",
+    "country": "Germany",
+    "logo": "https://img.sofascore.com/api/v1/team/2671/image",
+    "sofascore_id": 2671
+  },
+  "Hamburger SV": {
+    "aliases": [
+      "hamburg",
+      "hamburger sv",
+      "hsv",
+      "hamburg sv",
+      "гамбург",
+      "гамбург хсв"
+    ],
+    "league": "Bundesliga",
+    "country": "Germany",
+    "logo": "https://img.sofascore.com/api/v1/team/2676/image",
+    "sofascore_id": 2676
+  },
+  "TSG Hoffenheim": {
+    "aliases": [
+      "hoffenheim",
+      "tsg hoffenheim",
+      "tsg",
+      "хoффенхайм",
+      "хоффенхайм"
+    ],
+    "league": "Bundesliga",
+    "country": "Germany",
+    "logo": "https://img.sofascore.com/api/v1/team/2569/image",
+    "sofascore_id": 2569
+  },
+  "FC Heidenheim": {
+    "aliases": [
+      "heidenheim",
+      "fc heidenheim",
+      "heid",
+      "хайденхайм"
+    ],
+    "league": "Bundesliga",
+    "country": "Germany",
+    "logo": "https://img.sofascore.com/api/v1/team/44/image",
+    "sofascore_id": 44
+  },
+  "FC St. Pauli": {
+    "aliases": [
+      "st pauli",
+      "st. pauli",
+      "fc st pauli",
+      "pauli",
+      "санкт паули",
+      "ст паули"
+    ],
+    "league": "Bundesliga",
+    "country": "Germany",
+    "logo": "https://img.sofascore.com/api/v1/team/44/image",
+    "sofascore_id": 44
+  },
+  "Angers": {
+    "aliases": [
+      "angers",
+      "angers sco",
+      "анже"
+    ],
+    "league": "Ligue 1",
+    "country": "France",
+    "logo": "https://img.sofascore.com/api/v1/team/1684/image",
+    "sofascore_id": 1684
+  },
+  "Auxerre": {
+    "aliases": [
+      "auxerre",
+      "aj auxerre",
+      "осер"
+    ],
+    "league": "Ligue 1",
+    "country": "France",
+    "logo": "https://img.sofascore.com/api/v1/team/1646/image",
+    "sofascore_id": 1646
+  },
+  "Brest": {
+    "aliases": [
+      "brest",
+      "stade brestois",
+      "stade brestois 29",
+      "брест"
+    ],
+    "league": "Ligue 1",
+    "country": "France",
+    "logo": "https://img.sofascore.com/api/v1/team/1715/image",
+    "sofascore_id": 1715
+  },
+  "Le Havre": {
+    "aliases": [
+      "le havre",
+      "le havre ac",
+      "lehavre",
+      "гавр",
+      "ле гавр"
+    ],
+    "league": "Ligue 1",
+    "country": "France",
+    "logo": "https://img.sofascore.com/api/v1/team/1662/image",
+    "sofascore_id": 1662
+  },
+  "Le Mans": {
+    "aliases": [
+      "le mans",
+      "le mans fc",
+      "мюлуз",
+      "ле ман"
+    ],
+    "league": "Ligue 1",
+    "country": "France",
+    "logo": "https://img.sofascore.com/api/v1/team/1672/image",
+    "sofascore_id": 1672
+  },
+  "Lens": {
+    "aliases": [
+      "lens",
+      "rc lens",
+      "racing lens",
+      "ланс"
+    ],
+    "league": "Ligue 1",
+    "country": "France",
+    "logo": "https://img.sofascore.com/api/v1/team/1648/image",
+    "sofascore_id": 1648
+  },
+  "Lille": {
+    "aliases": [
+      "lille",
+      "losc",
+      "losc lille",
+      "lille osc",
+      "лиль",
+      "лилль"
+    ],
+    "league": "Ligue 1",
+    "country": "France",
+    "logo": "https://img.sofascore.com/api/v1/team/1643/image",
+    "sofascore_id": 1643
+  },
+  "Lorient": {
+    "aliases": [
+      "lorient",
+      "fc lorient",
+      "лоран"
+    ],
+    "league": "Ligue 1",
+    "country": "France",
+    "logo": "https://img.sofascore.com/api/v1/team/1656/image",
+    "sofascore_id": 1656
+  },
+  "Lyon": {
+    "aliases": [
+      "lyon",
+      "ol",
+      "ol lyon",
+      "olympique lyon",
+      "olympique lyonnais",
+      "лион",
+      "олимпик лион"
+    ],
+    "league": "Ligue 1",
+    "country": "France",
+    "logo": "https://img.sofascore.com/api/v1/team/1649/image",
+    "sofascore_id": 1649
+  },
+  "Marseille": {
+    "aliases": [
+      "marseille",
+      "om",
+      "olympique marseille",
+      "olympique de marseille",
+      "марсель",
+      "олимпик марсель"
+    ],
+    "league": "Ligue 1",
+    "country": "France",
+    "logo": "https://img.sofascore.com/api/v1/team/1641/image",
+    "sofascore_id": 1641
+  },
+  "Monaco": {
+    "aliases": [
+      "monaco",
+      "as monaco",
+      "asm",
+      "монако"
+    ],
+    "league": "Ligue 1",
+    "country": "France",
+    "logo": "https://img.sofascore.com/api/v1/team/1653/image",
+    "sofascore_id": 1653
+  },
+  "Nice": {
+    "aliases": [
+      "nice",
+      "ogc nice",
+      "ogcn",
+      "ницца",
+      "ниc"
+    ],
+    "league": "Ligue 1",
+    "country": "France",
+    "logo": "https://img.sofascore.com/api/v1/team/1661/image",
+    "sofascore_id": 1661
+  },
+  "Paris FC": {
+    "aliases": [
+      "paris fc",
+      "paris",
+      "pfc",
+      "paris football club",
+      "париж",
+      "париж фк"
+    ],
+    "league": "Ligue 1",
+    "country": "France",
+    "logo": "https://img.sofascore.com/api/v1/team/6070/image",
+    "sofascore_id": 6070
+  },
+  "Paris Saint Germain": {
+    "aliases": [
+      "psg",
+      "paris saint germain",
+      "paris saint-germain",
+      "paris sg",
+      "paris",
+      "psg paris",
+      "псж",
+      "пари сен жермен",
+      "пари сен-жермен"
+    ],
+    "league": "Ligue 1",
+    "country": "France",
+    "logo": "https://img.sofascore.com/api/v1/team/1644/image",
+    "sofascore_id": 1644
+  },
+  "Rennes": {
+    "aliases": [
+      "rennes",
+      "stade rennais",
+      "stade rennais fc",
+      "ренн"
+    ],
+    "league": "Ligue 1",
+    "country": "France",
+    "logo": "https://img.sofascore.com/api/v1/team/1658/image",
+    "sofascore_id": 1658
+  },
+  "Strasbourg": {
+    "aliases": [
+      "strasbourg",
+      "rc strasbourg",
+      "rc strasbourg alsace",
+      "страсбург"
+    ],
+    "league": "Ligue 1",
+    "country": "France",
+    "logo": "https://img.sofascore.com/api/v1/team/1659/image",
+    "sofascore_id": 1659
+  },
+  "Toulouse": {
+    "aliases": [
+      "toulouse",
+      "tfc",
+      "toulouse fc",
+      "тулуза"
+    ],
+    "league": "Ligue 1",
+    "country": "France",
+    "logo": "https://img.sofascore.com/api/v1/team/1681/image",
+    "sofascore_id": 1681
+  },
+  "Troyes": {
+    "aliases": [
+      "troyes",
+      "estac",
+      "estac troyes",
+      "труа"
+    ],
+    "league": "Ligue 1",
+    "country": "France",
+    "logo": "https://img.sofascore.com/api/v1/team/1652/image",
+    "sofascore_id": 1652
+  },
+  "AEK Athens": {
+    "aliases": [
+      "aek",
+      "aek athens",
+      "aek fc",
+      "аек",
+      "аек афины"
+    ],
+    "league": "Champions League",
+    "country": "Greece",
+    "logo": "https://img.sofascore.com/api/v1/team/3250/image",
+    "sofascore_id": 3250
+  },
+  "Bodo Glimt": {
+    "aliases": [
+      "bodo",
+      "bodo glimt",
+      "bodø",
+      "bodø glimt",
+      "бодо глимт",
+      "бодо"
+    ],
+    "league": "Champions League",
+    "country": "Norway",
+    "logo": "https://img.sofascore.com/api/v1/team/656/image",
+    "sofascore_id": 656
+  },
+  "Club Brugge": {
+    "aliases": [
+      "club brugge",
+      "club brugge kv",
+      "brugge",
+      "клуб брюгге",
+      "брюгге"
+    ],
+    "league": "Champions League",
+    "country": "Belgium",
+    "logo": "https://img.sofascore.com/api/v1/team/2888/image",
+    "sofascore_id": 2888
+  },
+  "Fenerbahce": {
+    "aliases": [
+      "fenerbahce",
+      "fenerbahçe",
+      "fener",
+      "fenerbahce sk",
+      "фенербахче",
+      "фенер"
+    ],
+    "league": "Champions League",
+    "country": "Turkey",
+    "logo": "https://img.sofascore.com/api/v1/team/3052/image",
+    "sofascore_id": 3052
+  },
+  "Feyenoord": {
+    "aliases": [
+      "feyenoord",
+      "feyenoord rotterdam",
+      "feijenoord",
+      "фейеноорд"
+    ],
+    "league": "Champions League",
+    "country": "Netherlands",
+    "logo": "https://img.sofascore.com/api/v1/team/2959/image",
+    "sofascore_id": 2959
+  },
+  "Galatasaray": {
+    "aliases": [
+      "galatasaray",
+      "galatasaray sk",
+      "gs",
+      "galata",
+      "галатасарай",
+      "галата"
+    ],
+    "league": "Champions League",
+    "country": "Turkey",
+    "logo": "https://img.sofascore.com/api/v1/team/3061/image",
+    "sofascore_id": 3061
+  },
+  "LASK": {
+    "aliases": [
+      "lask",
+      "lask linz",
+      "linzer ask",
+      "ласк",
+      "ласк линц"
+    ],
+    "league": "Champions League",
+    "country": "Austria",
+    "logo": "https://img.sofascore.com/api/v1/team/2058/image",
+    "sofascore_id": 2058
+  },
+  "Porto": {
+    "aliases": [
+      "porto",
+      "fc porto",
+      "fcp",
+      "порту",
+      "порто"
+    ],
+    "league": "Champions League",
+    "country": "Portugal",
+    "logo": "https://img.sofascore.com/api/v1/team/3002/image",
+    "sofascore_id": 3002
+  },
+  "PSV Eindhoven": {
+    "aliases": [
+      "psv",
+      "psv eindhoven",
+      "eindhoven",
+      "псв",
+      "псв эйндховен"
+    ],
+    "league": "Champions League",
+    "country": "Netherlands",
+    "logo": "https://img.sofascore.com/api/v1/team/2952/image",
+    "sofascore_id": 2952
+  },
+  "Sabah": {
+    "aliases": [
+      "sabah",
+      "sabah fc",
+      "сабах"
+    ],
+    "league": "Champions League",
+    "country": "Azerbaijan",
+    "logo": "https://img.sofascore.com/api/v1/team/267828/image",
+    "sofascore_id": 267828
+  },
+  "Shakhtar Donetsk": {
+    "aliases": [
+      "shakhtar",
+      "shakhtar donetsk",
+      "shakhtar donetsk",
+      "shakhtar fc",
+      "донецкий шахтер",
+      "шахтер",
+      "шахтёр",
+      "шахтер донецк"
+    ],
+    "league": "Champions League",
+    "country": "Ukraine",
+    "logo": "https://img.sofascore.com/api/v1/team/3313/image",
+    "sofascore_id": 3313
+  },
+  "Slavia Prague": {
+    "aliases": [
+      "slavia",
+      "slavia prague",
+      "slavia praha",
+      "slavia prague fc",
+      "славия",
+      "славия прага"
+    ],
+    "league": "Champions League",
+    "country": "Czech Republic",
+    "logo": "https://img.sofascore.com/api/v1/team/2216/image",
+    "sofascore_id": 2216
+  },
+  "Slovan Bratislava": {
+    "aliases": [
+      "slovan",
+      "slovan bratislava",
+      "slovan bratislava fc",
+      "славан",
+      "слован братислава"
+    ],
+    "league": "Champions League",
+    "country": "Slovakia",
+    "logo": "https://img.sofascore.com/api/v1/team/2404/image",
+    "sofascore_id": 2404
+  },
+  "Sporting CP": {
+    "aliases": [
+      "sporting",
+      "sporting cp",
+      "sporting lisbon",
+      "sporting lisboa",
+      "scp",
+      "спортинг",
+      "спортинг лиссабон"
+    ],
+    "league": "Champions League",
+    "country": "Portugal",
+    "logo": "https://img.sofascore.com/api/v1/team/3001/image",
+    "sofascore_id": 3001
+  },
+  "Viking": {
+    "aliases": [
+      "viking",
+      "viking fk",
+      "viking stavanger",
+      "викинг",
+      "викинг ставангер"
+    ],
+    "league": "Champions League",
+    "country": "Norway",
+    "logo": "https://img.sofascore.com/api/v1/team/1164/image",
+    "sofascore_id": 1164
+  }
+}

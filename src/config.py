@@ -41,3 +41,40 @@ DEFAULT_AWAY_XG = 1.15
 # -------------------------
 
 MAX_GOALS = 10
+            
+
+# -------------------------
+# Leagues
+# -------------------------
+
+LEAGUES = [
+
+    "ENG-Premier League",
+    "ENG-Championship",
+    "ENG-League One",
+    "ENG-League Two",
+
+    "ESP-La Liga",
+    "ESP-Segunda Division",
+
+    "GER-Bundesliga",
+    "GER-2. Bundesliga",
+
+    "ITA-Serie A",
+    "ITA-Serie B",
+
+    "FRA-Ligue 1",
+    "FRA-Ligue 2",
+
+    "NED-Eredivisie",
+
+    "BEL-Jupiler Pro League",
+
+    "POR-Primeira Liga",
+
+    "SCO-Scottish Premiership",
+
+    "TUR-Super Lig",
+
+    "GRE-Super League",
+]

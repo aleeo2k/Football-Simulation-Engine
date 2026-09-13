@@ -1,20 +1,38 @@
 import soccerdata as sd
 
 
+SEASONS = [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+]
+
+
 class UnderstatCollector:
+
     def __init__(self):
-        self.understat = sd.Understat()
 
-    def get_matches(self, league: str):
-        """
-        Загружает расписание и статистику матчей выбранной лиги.
+        self.seasons = SEASONS
 
-        Примеры:
-        ENG-Premier League
-        ESP-La Liga
-        ITA-Serie A
-        GER-Bundesliga
-        FRA-Ligue 1
-        """
+    def get_matches(
+        self,
+        league: str,
+    ):
 
-        return self.understat.read_schedule(league)
+        understat = sd.Understat(
+            leagues=league,
+            seasons=self.seasons,
+        )
+
+        return understat.read_schedule(
+            include_matches_without_data=True
+        )
